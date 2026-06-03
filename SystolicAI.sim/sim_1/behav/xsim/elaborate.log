@@ -1,17 +1,13 @@
 Vivado Simulator v2025.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: E:/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_systolic_2x2_behav xil_defaultlib.tb_systolic_2x2 xil_defaultlib.glbl -log elaborate.log 
+Running: E:/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_systolic_array_behav xil_defaultlib.tb_systolic_array xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
+WARNING: [XSIM 43-4328] File: D:/SystolicAI/SystolicAI/systemverilog-systolic-array/SystolicAI.srcs/sim_1/new/tb_systolic_array.sv Line: 57 : Sensitivity on input argument "valid" of task "drive_inputs" may never get triggered.
 Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.mac
-Compiling module xil_defaultlib.pe
-Compiling module xil_defaultlib.systolic_2x2
-Compiling module xil_defaultlib.tb_systolic_2x2
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_systolic_2x2_behav
+ERROR: [XSIM 43-3356]  Could not open file xsim.dir/tb_systolic_array_behav/xsim.type for writing.
+ERROR: [XSIM 43-3915] Encountered a fatal error. Cannot continue. Exiting... 

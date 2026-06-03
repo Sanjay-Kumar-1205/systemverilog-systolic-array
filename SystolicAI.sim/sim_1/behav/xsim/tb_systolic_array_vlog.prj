@@ -2,8 +2,8 @@
 sv xil_defaultlib  --include "E:/2025.2/Vivado/data/rsb/busdef" \
 "../../../../SystolicAI.srcs/sources_1/new/mac.sv" \
 "../../../../SystolicAI.srcs/sources_1/new/pe.sv" \
-"../../../../SystolicAI.srcs/sources_1/new/systolic_2x2.sv" \
-"../../../../SystolicAI.srcs/sim_1/new/tb_systolic_2x2.sv" \
+"../../../../SystolicAI.srcs/sources_1/new/systolic_array.sv" \
+"../../../../SystolicAI.srcs/sim_1/new/tb_systolic_array.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

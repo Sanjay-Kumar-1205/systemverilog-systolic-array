@@ -1,2 +1,8 @@
 Time resolution is 1 ps
-$finish called at time : 60 ns : File "D:/SystolicAI/SystolicAI/SystolicAI.srcs/sim_1/new/tb_systolic_2x2.sv" Line 79
+Final systolic result:
+[19 22]
+[43 50]
+Expected:
+[19 22]
+[43 50]
+$finish called at time : 125 ns : File "D:/SystolicAI/SystolicAI/systemverilog-systolic-array/SystolicAI.srcs/sim_1/new/tb_systolic_array.sv" Line 88
