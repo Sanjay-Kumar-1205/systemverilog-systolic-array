@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri May 29 15:18:58 2026
+# Process ID         : 24336
+# Current directory  : D:/SystolicAI/SystolicAI/systemverilog-systolic-array/SystolicAI.sim/sim_1/behav/xsim
+# Command line       : xsim.exe -log simulate_param_check.log -mode tcl -source {xsim.dir/tb_systolic_array_param_check/xsim_script.tcl}
+# Log file           : D:/SystolicAI/SystolicAI/systemverilog-systolic-array/SystolicAI.sim/sim_1/behav/xsim/simulate_param_check.log
+# Journal file       : D:/SystolicAI/SystolicAI/systemverilog-systolic-array/SystolicAI.sim/sim_1/behav/xsim\xsim.jou
+# Running On         : viruz
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16831 MB
+# Swap memory        : 8676 MB
+# Total Virtual      : 25507 MB
+# Available Virtual  : 6915 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_systolic_array_param_check/xsim_script.tcl
+# xsim {tb_systolic_array_param_check} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+Final systolic result:
+[19 22]
+[43 50]
+Expected:
+[19 22]
+[43 50]
+$finish called at time : 90 ns : File "D:/SystolicAI/SystolicAI/systemverilog-systolic-array/SystolicAI.srcs/sim_1/new/tb_systolic_array.sv" Line 107
+exit
+INFO: [Common 17-206] Exiting xsim at Fri May 29 15:19:01 2026...

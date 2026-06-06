@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900">
+  <defs>
+    <style>
+      .bg { fill: #f5f1e8; }
+      .panel { fill: #fffdf9; stroke: #d7c6a6; stroke-width: 2; rx: 20; }
+      .title { font: 700 34px Arial, sans-serif; fill: #1c2b39; }
+      .sub { font: 700 24px Arial, sans-serif; fill: #1c2b39; }
+      .txt { font: 600 21px Consolas, monospace; fill: #233645; }
+      .body { font: 500 20px Arial, sans-serif; fill: #314455; }
+      .accent { stroke: #1a7f5a; stroke-width: 4; fill: none; }
+      .eq { font: 700 26px Arial, sans-serif; fill: #a7652b; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1280" height="900"/>
+  <text x="60" y="62" class="title">Verified 3x3 Output From the Generic Systolic Array Testbench</text>
+
+  <rect x="50" y="100" width="1180" height="340" class="panel"/>
+  <text x="80" y="145" class="sub">Case 1: Positive-valued matrices</text>
+
+  <text x="90" y="200" class="txt">A = [  1   2   3 ]</text>
+  <text x="90" y="235" class="txt">    [  4   5   6 ]</text>
+  <text x="90" y="270" class="txt">    [  7   8   9 ]</text>
+
+  <text x="420" y="200" class="eq">x</text>
+
+  <text x="500" y="200" class="txt">B = [  9   8   7 ]</text>
+  <text x="500" y="235" class="txt">    [  6   5   4 ]</text>
+  <text x="500" y="270" class="txt">    [  3   2   1 ]</text>
+
+  <text x="850" y="200" class="eq">=</text>
+
+  <text x="930" y="200" class="txt">C = [  30   24   18 ]</text>
+  <text x="930" y="235" class="txt">    [  84   69   54 ]</text>
+  <text x="930" y="270" class="txt">    [ 138  114   90 ]</text>
+
+  <path d="M880 215 H915" class="accent"/>
+
+  <text x="90" y="330" class="body">Example dot product:</text>
+  <text x="285" y="330" class="txt">C[0][0] = (1 x 9) + (2 x 6) + (3 x 3) = 30</text>
+  <text x="90" y="370" class="body">Each processing element accumulates one row-column dot product until the frame completes.</text>
+
+  <rect x="50" y="490" width="1180" height="300" class="panel"/>
+  <text x="80" y="535" class="sub">Case 2: Signed mixed-valued matrices</text>
+
+  <text x="90" y="590" class="txt">A = [ -3   1  -2 ]</text>
+  <text x="90" y="625" class="txt">    [  4  -5   6 ]</text>
+  <text x="90" y="660" class="txt">    [ -7   8   2 ]</text>
+
+  <text x="420" y="590" class="eq">x</text>
+
+  <text x="500" y="590" class="txt">B = [  2  -1   0 ]</text>
+  <text x="500" y="625" class="txt">    [ -4   3   5 ]</text>
+  <text x="500" y="660" class="txt">    [  6   7  -2 ]</text>
+
+  <text x="850" y="590" class="eq">=</text>
+
+  <text x="930" y="590" class="txt">C = [ -22   -8    9 ]</text>
+  <text x="930" y="625" class="txt">    [  64   23  -37 ]</text>
+  <text x="930" y="660" class="txt">    [ -34   45   36 ]</text>
+
+  <text x="90" y="730" class="body">These values are exactly what the testbench golden model computes before comparing against</text>
+  <text x="90" y="760" class="body">the hardware accumulators `acc_out[row][col]` when `output_valid` is asserted.</text>
+</svg>

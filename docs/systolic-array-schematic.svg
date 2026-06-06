@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <style>
+      .bg { fill: #f6f4ee; }
+      .title { font: 700 34px Arial, sans-serif; fill: #1d2a35; }
+      .label { font: 600 20px Arial, sans-serif; fill: #1d2a35; }
+      .small { font: 500 17px Arial, sans-serif; fill: #314455; }
+      .pe { fill: #fff8e8; stroke: #a7652b; stroke-width: 3; rx: 18; }
+      .flowA { stroke: #1a7f5a; stroke-width: 6; fill: none; marker-end: url(#arrowA); }
+      .flowB { stroke: #005f99; stroke-width: 6; fill: none; marker-end: url(#arrowB); }
+      .ctrl { stroke: #7b3fc4; stroke-width: 4; fill: none; stroke-dasharray: 10 8; marker-end: url(#arrowC); }
+      .frame { fill: #fffdf8; stroke: #d9c9a4; stroke-width: 2; rx: 20; }
+    </style>
+    <marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1a7f5a"/>
+    </marker>
+    <marker id="arrowB" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#005f99"/>
+    </marker>
+    <marker id="arrowC" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7b3fc4"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1200" height="720"/>
+  <text x="60" y="62" class="title">Parameterized Systolic Array Dataflow</text>
+
+  <rect x="45" y="95" width="1110" height="570" class="frame"/>
+
+  <text x="102" y="155" class="label">Activation inputs</text>
+  <text x="885" y="155" class="label">Weights move downward</text>
+  <text x="855" y="185" class="small">weight_in[col] feeds the top row</text>
+  <text x="105" y="185" class="small">data_in[row] feeds the left column</text>
+
+  <rect x="220" y="220" width="135" height="95" class="pe"/>
+  <rect x="420" y="220" width="135" height="95" class="pe"/>
+  <rect x="620" y="220" width="135" height="95" class="pe"/>
+
+  <rect x="220" y="360" width="135" height="95" class="pe"/>
+  <rect x="420" y="360" width="135" height="95" class="pe"/>
+  <rect x="620" y="360" width="135" height="95" class="pe"/>
+
+  <rect x="220" y="500" width="135" height="95" class="pe"/>
+  <rect x="420" y="500" width="135" height="95" class="pe"/>
+  <rect x="620" y="500" width="135" height="95" class="pe"/>
+
+  <text x="258" y="275" class="label">PE[0][0]</text>
+  <text x="458" y="275" class="label">PE[0][1]</text>
+  <text x="658" y="275" class="label">PE[0][2]</text>
+
+  <text x="258" y="415" class="label">PE[1][0]</text>
+  <text x="458" y="415" class="label">PE[1][1]</text>
+  <text x="658" y="415" class="label">PE[1][2]</text>
+
+  <text x="258" y="555" class="label">PE[2][0]</text>
+  <text x="458" y="555" class="label">PE[2][1]</text>
+  <text x="658" y="555" class="label">PE[2][2]</text>
+
+  <text x="250" y="300" class="small">acc += data x weight</text>
+  <text x="450" y="300" class="small">acc += data x weight</text>
+  <text x="650" y="300" class="small">acc += data x weight</text>
+  <text x="250" y="440" class="small">acc += data x weight</text>
+  <text x="450" y="440" class="small">acc += data x weight</text>
+  <text x="650" y="440" class="small">acc += data x weight</text>
+  <text x="250" y="580" class="small">acc += data x weight</text>
+  <text x="450" y="580" class="small">acc += data x weight</text>
+  <text x="650" y="580" class="small">acc += data x weight</text>
+
+  <path d="M110 268 H220" class="flowA"/>
+  <path d="M110 408 H220" class="flowA"/>
+  <path d="M110 548 H220" class="flowA"/>
+
+  <path d="M355 268 H420" class="flowA"/>
+  <path d="M555 268 H620" class="flowA"/>
+  <path d="M355 408 H420" class="flowA"/>
+  <path d="M555 408 H620" class="flowA"/>
+  <path d="M355 548 H420" class="flowA"/>
+  <path d="M555 548 H620" class="flowA"/>
+
+  <path d="M287 165 V220" class="flowB"/>
+  <path d="M487 165 V220" class="flowB"/>
+  <path d="M687 165 V220" class="flowB"/>
+
+  <path d="M287 315 V360" class="flowB"/>
+  <path d="M287 455 V500" class="flowB"/>
+  <path d="M487 315 V360" class="flowB"/>
+  <path d="M487 455 V500" class="flowB"/>
+  <path d="M687 315 V360" class="flowB"/>
+  <path d="M687 455 V500" class="flowB"/>
+
+  <path d="M835 250 H760" class="ctrl"/>
+  <path d="M835 390 H760" class="ctrl"/>
+  <path d="M835 530 H760" class="ctrl"/>
+
+  <text x="70" y="272" class="small">data_in[0]</text>
+  <text x="70" y="412" class="small">data_in[1]</text>
+  <text x="70" y="552" class="small">data_in[2]</text>
+
+  <text x="245" y="140" class="small">weight_in[0]</text>
+  <text x="445" y="140" class="small">weight_in[1]</text>
+  <text x="645" y="140" class="small">weight_in[2]</text>
+
+  <text x="848" y="242" class="small">valid pulse follows streamed data</text>
+  <text x="848" y="382" class="small">accumulators hold partial sums</text>
+  <text x="848" y="522" class="small">result matrix appears after 2N - 1 inputs</text>
+
+  <text x="860" y="610" class="label">Outputs</text>
+  <text x="860" y="640" class="small">acc_out[row][col] is one dot product</text>
+</svg>
