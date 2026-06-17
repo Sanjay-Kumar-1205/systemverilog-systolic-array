@@ -15,7 +15,7 @@ This project implements a parameterized `N x N` systolic array for signed matrix
 
 ## Architecture
 
-![Systolic array schematic](docs/systolic-array-schematic.svg)
+![Parameterized systolic array dataflow](docs/systolic-array-dataflow-linkedin.png)
 
 Each PE receives:
 
